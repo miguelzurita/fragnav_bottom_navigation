@@ -55,7 +55,8 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationB
 
         bottomNavigationBar.setTabSelectedListener(this);
 
-        bottomNavigationBar.setMode(BottomNavigationBar.MODE_FIXED);
+//        bottomNavigationBar.setMode(BottomNavigationBar.MODE_FIXED);
+        bottomNavigationBar.setMode(BottomNavigationBar.MODE_FIXED_NO_TITLE);
         bottomNavigationBar.setBackgroundStyle(BottomNavigationBar.BACKGROUND_STYLE_STATIC);
 
 
