@@ -12,13 +12,24 @@ import android.widget.TextView;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class HomeFragment extends Fragment {
+public class HomeFragment extends BaseFragment {
+
+    public static final String ARGS_INSTANCE = "com.ncapdevi.sample.argsInstance";
 
 
     private TextView textview;
 
     public HomeFragment() {
         // Required empty public constructor
+    }
+
+    public static HomeFragment newInstance(int instance, String label) {
+        Bundle args = new Bundle();
+        args.putInt(ARGS_INSTANCE, instance);
+        args.putString("label", label);
+        HomeFragment fragment = new HomeFragment();
+        fragment.setArguments(args);
+        return fragment;
     }
 
 
